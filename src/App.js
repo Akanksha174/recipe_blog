@@ -1,8 +1,17 @@
 import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home/Home";
+import Books from "./pages/Book/Book";
+
 
 const App=()=>{
     return(
-        <div><h1>Hello World</h1></div>
+        <div>
+            <Routes>
+                <Route path="/" element={<Home/>}></Route>
+                <Route path="/books" element={<Books/>}></Route>
+            </Routes>
+            </div>
     )
 }
 
